@@ -1,21 +1,19 @@
-
-name: My First Pipeline
+name: my Second Pipeline
 
 on:
   push:
 
 jobs:
-  hello-job:
+  demo-job:
 
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Print Welcome Message
-        run: echo "Welcome to GitHub Actions"
-
-      - name: Show Current Directory
+      - name: show current directory
         run: pwd
 
-      - name: List Files
-        run: ls
+      - name: Show Repository Directory
+        run: ls -la
