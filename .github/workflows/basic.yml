@@ -17,3 +17,17 @@ jobs:
 
       - name: Show Repository Directory
         run: ls -la
+
+      - name: System Information
+
+        run: |
+
+         pwd
+
+         ls -la
+
+         whoami
+
+         uname -a
+
+         date
